@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace IHttpClientFactoryExample
 {
-    interface ITypedClient
+    public interface ITypedClient
     {
         Task<string> Get();
     }

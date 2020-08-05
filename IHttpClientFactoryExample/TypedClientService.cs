@@ -15,7 +15,7 @@ namespace IHttpClientFactoryExample
         }
         public async Task<string> Get()
         {
-            var url= new Uri("https://www.google.com");
+            var url= new Uri("https://www.google.com/");
             var response= await _httpClient.GetAsync(url);
             return await response.Content.ReadAsStringAsync();
         }
