@@ -11,8 +11,8 @@ namespace IHttpClientFactoryExample.Controllers
     [ApiController]
     public class TypedClientController : ControllerBase
     {
-        private TypedClientService _typedClientService;
-        public TypedClientController(TypedClientService typedClientService)
+        private ITypedClient _typedClientService;
+        public TypedClientController(ITypedClient typedClientService)
         {
             _typedClientService = typedClientService;
         }
